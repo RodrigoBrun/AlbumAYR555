@@ -59,3 +59,37 @@ function descargarPagina(id) {
     link.click();
   });
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sobre = document.getElementById('sobre-animado');
+  const carta = document.getElementById('carta');
+
+  if (sobre) {
+    sobre.addEventListener('click', () => {
+      carta.style.display = 'block';
+    });
+  }
+});
+
+function cerrarCarta() {
+  const carta = document.getElementById('carta');
+  carta.style.display = 'none';
+}
+
+
+
+function toggleMusica() {
+  const audio = document.getElementById('musica-fondo');
+  const boton = document.getElementById('toggle-musica');
+
+  if (audio.paused) {
+    audio.play();
+    boton.textContent = '🎵';
+  } else {
+    audio.pause();
+    boton.textContent = '🔇';
+  }
+}

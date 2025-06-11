@@ -202,6 +202,113 @@ body {
 }
 
 
+
+/* ✉️ Animación del sobre */
+.sobre-clickeable {
+  width: 100px;
+  cursor: pointer;
+  animation: flotar 2s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 💌 Carta oculta */
+.carta-oculta {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88%;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  background: #fffefb; /* más cálido, suave contraste */
+  border: 3px solid #f48fb1;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Playfair Display', serif;
+  z-index: 9999;
+}
+
+
+.carta-oculta p {
+  margin-bottom: 1em;
+  color: #444;
+  font-size: 18px;
+   font-family: 'Dancing Script', cursive;
+}
+
+.carta-oculta button {
+  margin-top: 20px;
+  background: #f48fb1;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.pagina-final {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina-final .titulo-pagina {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.pagina-final .ilustracion {
+  border: none;
+  margin: 0;
+  max-height: none;
+}
+
+.pagina-final.pagina-album {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  height: auto !important;
+}
+
+
+
+
+.boton-musica {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #f48fb1;
+  transition: transform 0.3s;
+}
+
+.boton-musica:hover {
+  transform: scale(1.2);
+}
+
+
 /* --------------------------------------------------
   📱 RESPONSIVE AJUSTES
 -------------------------------------------------- */

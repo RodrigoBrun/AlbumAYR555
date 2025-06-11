@@ -110,11 +110,55 @@
 <div class="frase-pie">TE QUIERO MUCHO.”</div>
   </div>
 
+ <div class="pagina-album pagina-final" id="pagina-final">
+  <div class="titulo-pagina">Una cosa más...</div>
+  <div class="ilustracion">
+    <img src="imagenes/sobreUruPanama.jpf.png" alt="Sobre" id="sobre-animado" class="sobre-clickeable">
+  </div>
+</div>
+
+  <div class="carta-oculta" id="carta">
+    <button id="toggle-musica" class="boton-musica" onclick="toggleMusica()">🎵</button>
+
+    <p>Para Agustina:</p>
+    <p>Hola Agus,
+
+Qué loco, ¿no?
+Pasamos de la nada a esto.
+De no conocernos, a hablarnos todos los días, a contarnos todo, a estar ahí el uno para el otro como si siempre hubiera sido así.
+
+Nunca imaginé que en este momento de mi vida alguien iba a buscarme como lo hiciste vos.
+Y mucho menos que esa persona fuera tan especial como vos.
+
+Gracias por acercarte, por querer conocerme de verdad, por mostrarme que todavía hay encuentros que valen la pena.
+
+Quizás nunca te lo dije con estas palabras, pero que hayas querido verme antes de irte fue muchísimo para mí.
+Fue un algo que siempre voy a recordar.
+
+Gracias por compartir esos últimos minutos acá conmigo.
+Y gracias por seguir haciéndome feliz todos los días después de eso.
+
+Quiero que sepas que podés confiar en mí para lo que sea.
+Que estoy, y voy a estar.
+Porque esto que tenemos no es algo común, y porque quiero cuidarlo.
+Quiero cuidarte a vos, y a todo lo que te importa.
+
+Te quiero mucho, Agus.
+Y te espero acá… el tiempo que haga falta.
+
+</p>
+    <p>Muy feliz cumpleaños enanita, Te Quiero.<br>– Ro ❤️</p>
+    <button onclick="cerrarCarta()">Cerrar</button>
+  </div>
+</div>
+
+
   <!-- Botón siguiente -->
   <button id="btn-siguiente" onclick="paginaSiguiente()">➡</button>
   <button id="btn-anterior" onclick="paginaAnterior()">⬅</button>
 
 </div>
+<audio id="musica-fondo" src="imagenes/Alex Warren - Carry You Home (Lyrics).mp3" autoplay loop></audio>
 
  <script src="scripts.js" defer></script>
 </body>

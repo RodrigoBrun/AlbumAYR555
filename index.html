@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coloreando a distancia – Álbum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div id="album-container">
+  <!-- Páginas -->
+  <div class="pagina-album portada visible" id="pagina-1">
+    <h1>Nuestra Historia</h1>
+     <h1>555</h1>
+    <h2>Para Agustina, en tu cumpleaños número 23</h2>
+    <div class="ilustracion">
+      <img src="imagenes/portada.jpg" alt="Portada">
+      <button class="boton-descarga" onclick="descargarPagina('pagina-1')">⬇</button>
+    </div>
+    <div class="frase-pie">Un regalo para que pintes con amor cada momento compartido</div>
+  </div>
+
+  <div class="pagina-album" id="pagina-2">
+  <div class="titulo-pagina">La Palta que lo Cambió Todo</div>
+  <div class="ilustracion">
+    <img src="imagenes/Imagenalbum_palta.jpg.jpg" alt="Primera cita">
+    <button class="boton-descarga" onclick="descargarPagina('pagina-2')">⬇</button>
+  </div>
+  <div class="frase-pie">“Gracias por escribirme ese día.”</div>
+  </div>
+
+  <div class="pagina-album" id="pagina-4">
+  <div class="titulo-pagina">Como si ya nos conociéramos</div>
+  <div class="ilustracion">
+    <img src="imagenes/Imagenalbum_abrazo.jpg.jpg" alt="Primera risa juntos">
+    <button class="boton-descarga" onclick="descargarPagina('pagina-4')">⬇</button>
+  </div>
+  <div class="frase-pie">“Fue tan fácil reír con vos…</div>
+  <div class="frase-pie">…que por un momento olvidé que era la primera vez.”</div>
+</div>
+
+
+
+   <div class="pagina-album" id="pagina-4">
+    <div class="titulo-pagina"></div>
+    <div class="ilustracion">
+      <img src="imagenes/Imagenalbum_despedida.jpg.jpg" alt="Videollamada">
+      <button class="boton-descarga" onclick="descargarPagina('pagina-3')">⬇</button>
+    </div>
+    <div class="frase-pie">“Ese abrazo fue corto, pero todavía me dura.</div>
+  <div class="frase-pie">Te ibas, pero algo de vos se quedaba conmigo.”</div>
+  </div>
+
+  <div class="pagina-album" id="pagina-5">
+  <div class="titulo-pagina">Nuestra primera videollamada</div>
+  <div class="ilustracion">
+    <img src="imagenes/Imagenalbum_videollamada3.jpg.jpg" alt="Videollamada con corazones">
+    <button class="boton-descarga" onclick="descargarPagina('pagina-5')">⬇</button>
+  </div>
+  <div class="frase-pie">“Entre risas y corazones, algo empezaba…</div>
+  <div class="frase-pie">…aunque todavía no lo sabíamos.”</div>
+</div>
+
+
+  <div class="pagina-album" id="pagina-6">
+  <div class="titulo-pagina">Las videollamadas continuaron</div>
+  <div class="ilustracion">
+    <img src="imagenes/Imagenalbum_videollamada1.jpg.jpg" alt="Videollamada outfit">
+    <button class="boton-descarga" onclick="descargarPagina('pagina-6')">⬇</button>
+  </div>
+  <div class="frase-pie">“Entre risas y poses…”</div>
+  <div class="frase-pie">“…te ibas volviendo parte de mis días.”</div>
+</div>
+
+
+  <div class="pagina-album" id="pagina-7">
+  <div class="titulo-pagina">Y continúan...</div>
+  <div class="ilustracion">
+    <img src="imagenes/Imagenalbum_videollamada2.jpg.jpg" alt="Videollamada outfit vestido">
+    <button class="boton-descarga" onclick="descargarPagina('pagina-7')">⬇</button>
+  </div>
+  <div class="frase-pie">“Otro outfit, otra sonrisa…</div>
+  <div class="frase-pie">…y yo, cada vez más encantado con vos.”</div>
+</div>
+
+
+
+  <div class="pagina-album" id="pagina-8">
+  <div class="titulo-pagina">Gracias por ayudarme siempre que lo necesito</div>
+  <div class="ilustracion">
+    <img src="imagenes/Imagenalbum_videollamada4.jpg.jpg" alt="Videollamada trámites">
+    <button class="boton-descarga" onclick="descargarPagina('pagina-8')">⬇</button>
+  </div>
+  <div class="frase-pie">“Yo con cara de no entender nada…</div>
+  <div class="frase-pie">…y vos, salvándome una vez más.”</div>
+</div>
+
+
+   <div class="pagina-album" id="pagina-9">
+   <div class="titulo-pagina">Esto recién empieza</div>
+    <div class="ilustracion">
+      <img src="imagenes/Imagenalbum_continuara.jpg.jpg" alt="Videollamada">
+      <button class="boton-descarga" onclick="descargarPagina('pagina-3')">⬇</button>
+    </div>
+   <div class="frase-pie">“Hay un abrazo que espera su momento.</div>
+<div class="frase-pie">Nos vemos pronto... en la próxima página.”</div>
+<div class="frase-pie">TE QUIERO MUCHO.”</div>
+  </div>
+
+  <!-- Botón siguiente -->
+  <button id="btn-siguiente" onclick="paginaSiguiente()">➡</button>
+  <button id="btn-anterior" onclick="paginaAnterior()">⬅</button>
+
+</div>
+
+ <script src="scripts.js" defer></script>
+</body>
+</html>
